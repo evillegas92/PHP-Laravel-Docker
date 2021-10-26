@@ -17,3 +17,5 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip
 RUN docker-php-ext-install zip
+# Give the default PHP-fpm user access to the app files
+#RUN chmod -R 777 /app
